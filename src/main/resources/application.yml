@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: authserver
+
+  datasource:
+    url:  jdbc:mysql://localhost:3306/test?useTimezone=true&serverTimezone=UTC
+    username: root
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+server:
+  port: 8081
+
+config:
+  oauth2:
+    clientid: springauthapp
+    clientSecret: 123456
+    privateKey: -----BEGIN RSA PRIVATE KEY-----
+      MIIEogIBAAKCAQEAlVG768ODyH2ZSKExDs8u8meWkNmHD3hiMq/KD8tFM15twHYs
+      E+f9NlG5hGTuF1rXI2MbqQ6hewYjUE50tr6DarY2QkaiQktXuh2yS/BNd40yhyuE
+      iXHw4Wjl6F57UveWFQtZbn3IrZI0LME1zZbLPuBLybXtaXwzCJmhCy6rC/rhbE0J
+      Eb+FGSZ1NQbQOvHmN97OIjBtDCFjbHdlEQoWfhk46ANOm9fMo66r7cN54WSbbh8K
+      lwBqV/bA+uWcTkljMFRnlvhM2XjmgmaoOcue9ZE6MWZzYhDe2iITa1qOyfv84ryq
+      Yxq8VAqaWyEXJ4PGiItdETo4/FTckue4rL/5AQIDAQABAoIBAHTQz6p/d663C981
+      M9L5JSpA/hruAuqIbJJo0jSO+uFYI5apHIyqNn9zaiZ4a4fb6mll1LLqnkxHngLq
+      jgaVfuxSBprM9Y3VsZkKOH2OTpyT2w7Cbdq1SBSgYxTqLaLXzRNDoMB/KSsZMTY+
+      JWBkczcKdGAmssiOgMJepg3AgdJJTU0kDt+LZEs2gBd+LyDYFcJyP2sTOmbrPncd
+      eOVUsfiphQTe21vDK4+chbzIRjZeQyOmqEFiaMruawLfHNj99Qm1SkyU2fnpIzvB
+      WkYJ/tXHyVyQSz3qKxMQJHmMaIpmLVdfeguOW49baIcHPKN4lfcRyJe114jy4MkA
+      JR9Cct0CgYEA1Yk8zpGVv2PL875HoVrcSe7HOcuL+TNbBU/AkqKFTe751gAYKyUi
+      mJ0BEvaRMdxnVxgoUf0gl4nwnM7Ij81hinrhkQYmyK6G+YNcyA2gRR9ZG9AV/0lA
+      67Eporx2RwNmWxZpJaXAnA6h2Pa2AJnoLgg4icHflaOg3FefHcLucXcCgYEAswNT
+      rMd2hYyi0uvCF0mzrurCBM5NoCO+IIu15fIVUk0gbS9KR8uT1n8zWGYMMbUMPRdd
+      1/PPr1jlNlXvUtr/J2+wTYlO3qIskt8reps+dH72TJqySKf3fC3K7jsJt8+ywgfc
+      Dp0BQPPFxurbqeUx+Zks4n3P/TaCK9yXHFOtx0cCgYBhScSljNkAORS8Oa5jCoWh
+      PaQRZfahFE/dDKf9ZwR7LG0xnhtk1Od9RtMtc59Va0i9+qisKjrGMDerCd+A/R76
+      u9+3dmkHN9URK1ODZgnmVFECBf1vsU1d1PrWRS1ST288AurnFyy5LUV6F3V2sqiB
+      CIfR473dbI6mtVkucxi2IwKBgDWD4Rfd6UizalmzsSpVFipMdAQLyJj/Fm+UVKSR
+      Yl5gQDlj0cj0yxVsoWTj3PFfNnFs8tkEQiohYSSFPC6A2ZZohUQosDNOOBUQMmdM
+      0bbx3Z+4/2NJE2tEJU5ix9zzcnUe9GJJ/X31YkK9Iz3/DpmXeRuckPkZuoBySZpm
+      SaUxAoGAM1JGUS8g9lBGVzYks8DWdQHRk6jGn8Z/1rkXm9HNbghknj5ksplbzN+y
+      Nuzl7BvkB4HsdOyf6L8tYnTPzSgW1wVoP33sJB45hccD1RBARTo+TIiKwyG+E6gh
+      92IK20yGh3YU2IGPsXqQ1pf5LLjOslXT0WNCxZEX2jpHmoB7mEU=
+      -----END RSA PRIVATE KEY-----
+    publicKey: -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlVG768ODyH2ZSKExDs8u
+      8meWkNmHD3hiMq/KD8tFM15twHYsE+f9NlG5hGTuF1rXI2MbqQ6hewYjUE50tr6D
+      arY2QkaiQktXuh2yS/BNd40yhyuEiXHw4Wjl6F57UveWFQtZbn3IrZI0LME1zZbL
+      PuBLybXtaXwzCJmhCy6rC/rhbE0JEb+FGSZ1NQbQOvHmN97OIjBtDCFjbHdlEQoW
+      fhk46ANOm9fMo66r7cN54WSbbh8KlwBqV/bA+uWcTkljMFRnlvhM2XjmgmaoOcue
+      9ZE6MWZzYhDe2iITa1qOyfv84ryqYxq8VAqaWyEXJ4PGiItdETo4/FTckue4rL/5
+      AQIDAQAB
+      -----END PUBLIC KEY-----
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+
