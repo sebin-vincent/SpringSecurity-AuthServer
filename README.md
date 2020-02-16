@@ -26,4 +26,5 @@ INSERT INTO `oauth_client_details` (`client_id`, `resource_ids`, `client_secret`
 ```
 
 ## Work flow steps
+1. Fill client details for login request
 
