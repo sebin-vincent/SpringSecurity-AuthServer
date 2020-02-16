@@ -27,4 +27,22 @@ INSERT INTO `oauth_client_details` (`client_id`, `resource_ids`, `client_secret`
 
 ## Work flow steps
 1. Fill client details for login request
+  <img src="images/ClientDetail.png" >
+
+2. Add user credentials for login request with
+   2.1 granttype-password
+      <img src="images/LoginRequest.png">
+  
+   2.2 granttype-refresh_token
+      <img src="images/refresh_token.png" >
+      
+3. Login Response
+    <img src="images/LoginResponse.png" >
+    
+4. Decoded jwt access token
+    <img src="images/Decoded_jwt.png" >
+    
+
+
+
 
